@@ -41,5 +41,5 @@ steps:
     azureSubscription: 'Azure subscription 1(a0e296ee-83fc-458f-ba7e-b3cd0e5a76ba)'
     appType: 'webApp'
     WebAppName: 'devopsclassApp'
-    packageForLinux: '''$(build.artifactStagingDirectory)\testApp.zip'''
+    packageForLinux: '$(build.artifactStagingDirectory)\testApp.zip'
     
