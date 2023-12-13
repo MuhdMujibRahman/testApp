@@ -9,7 +9,7 @@ trigger:
 
 pool:
   name: 'devopsclass' 
-  vmImage: 'windows-latest'
+  # vmImage: 'windows-latest'
 
 variables:
   solution: '**/*.sln'
@@ -41,5 +41,4 @@ steps:
     azureSubscription: 'Azure subscription 1(2)(a0e296ee-83fc-458f-ba7e-b3cd0e5a76ba)'
     appType: 'webApp'
     WebAppName: 'devopsclass'
-    deployToSlotOrASE: true
-    packageForLinux: '$(build.artifactStagingDirectory)\TestApp.zip'
+    packageForLinux: '$(build.artifactStagingDirectory)\testApp.zip'
